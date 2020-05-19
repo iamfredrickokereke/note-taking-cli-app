@@ -19,5 +19,8 @@
   "homepage": "https://github.com/iamfredrickokereke/note-taking-cli-app#readme",
   "devDependencies": {
     "chalk": "^4.0.0"
+  },
+  "dependencies": {
+    "yargs": "^15.3.1"
   }
 }
