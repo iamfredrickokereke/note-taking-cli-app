@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/iamfredrickokereke/note-taking-cli-app/issues"
   },
-  "homepage": "https://github.com/iamfredrickokereke/note-taking-cli-app#readme"
+  "homepage": "https://github.com/iamfredrickokereke/note-taking-cli-app#readme",
+  "devDependencies": {
+    "chalk": "^4.0.0"
+  }
 }
