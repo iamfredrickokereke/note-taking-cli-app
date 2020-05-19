@@ -1,4 +1,9 @@
+const yargs = require('yargs');
 const command = process.argv[2];
+
+console.log(yargs.argv);
+ 
+
 
 // check data argument passed
 
