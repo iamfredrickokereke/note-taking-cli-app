@@ -1,16 +1,19 @@
 const yargs = require('yargs');
-const command = process.argv[2];
+// const command = process.argv[2];
 
-console.log(yargs.argv);
+// console.log(yargs.argv);
  
 yargs.command({
-    command : 'Add',
-    description : "Adds a new note",
-    handler : () =>{
+    command: 'Add',
+    description: 'Adds a new note',
+    handler: () =>{
         console.log('it works!');
         
     }
 })
+yargs.version('1.0.0')
+
+console.log(yargs.argv);
 
 // check data argument passed
 
@@ -22,6 +25,6 @@ yargs.command({
 // }else if (command === 'remove') {
 //     console.log('Removing note...');
     
-}
+// }
 
 
