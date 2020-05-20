@@ -11,23 +11,24 @@ yargs.command({
     describe: 'Adds a new note',
     builder:{
         title:{
+            alias:'title',
             describe: 'Note title',
             demandOption: true,
             type: 'string'
         },
         body:{
-            alias: 'file',
+            alias: 'body',
             demandOption: true,
-            default: 'name',
-            describe: 'these na option',
+            // default: 'name',
+            describe: 'Note body',
             type: 'string'
         },
     },
 
    
     handler: (argv) => {
-        console.log('The title is', argv.title);
-        console.log(argv.body);
+        console.log('Note Title: ', argv.title);
+        console.log('Note body: ', argv.body);
         
         
     }
