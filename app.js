@@ -3,29 +3,21 @@ const yargs = require('yargs');
 
 // console.log(yargs.argv);
 
-yargs.command({
-    command: 'Addi',
-    describe: 'Addisss a new note',
-    buider:{
-        title: {
-            describe: 'Title of note',
-            demandOption: (['Addi', true]),
-            type: 'string'                       
-        }
-    },
-    
-    handler: function (argv) {
-        console.log('the title is : ', argv);
-    }
-})
-// yargs.demandOption(['Addi', true])
+// yargs.demandOption([true])
 
 
 yargs.command({
     command: 'Add',
     describe: 'Adds a new note',
-    handler: () => {
-        console.log('Adding a note...!');
+    builder:{
+        title:{
+            describe: 'Note title',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: (argv) => {
+        console.log('The title is', argv.title);
         
     }
 })
