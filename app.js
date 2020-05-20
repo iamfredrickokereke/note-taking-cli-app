@@ -2,10 +2,25 @@ const yargs = require('yargs');
 // const command = process.argv[2];
 
 // console.log(yargs.argv);
+
+yargs.command({
+    command: 'Addi',
+    describe: 'Addisss a new note',
+    buider:{
+        title: {
+            describe: 'file name',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: function (argv) {
+        console.log('the title is : ', argv);
+    }
+})
  
 yargs.command({
     command: 'Add',
-    description: 'Adds a new note',
+    describe: 'Adds a new note',
     handler: () => {
         console.log('Adding a note...!');
         
@@ -14,7 +29,7 @@ yargs.command({
 
 yargs.command({
     command: 'Remove',
-    description: 'Removes a note',
+    describe: 'Removes a note',
     handler: () => {
         console.log('Removing a note...');
         
@@ -23,7 +38,7 @@ yargs.command({
 
 yargs.command({
     command: 'List',
-    description: 'Shows your notes',
+    describe: 'Shows your notes',
     buider: {
 
         title: {
@@ -36,12 +51,12 @@ yargs.command({
         console.log('Showing all your notes...' + argv.title);
         
     }
-    
+
 })
 
 yargs.command({
     command: 'Read',
-    description: 'Read a note',
+    descrip: 'Read a note',
     handler: () => {
         console.log('Reading notes...');
         
