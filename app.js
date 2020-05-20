@@ -16,6 +16,10 @@ yargs.command({
             type: 'string'
         }
     },
+
+    option:{
+        
+    },
     handler: (argv) => {
         console.log('The title is', argv.title);
         
