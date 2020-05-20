@@ -8,16 +8,19 @@ yargs.command({
     describe: 'Addisss a new note',
     buider:{
         title: {
-            describe: 'file name',
-            demandOption: true,
-            type: 'string'
+            describe: 'Title of note',
+            demandOption: (['Addi', true]),
+            type: 'string'                       
         }
     },
+    
     handler: function (argv) {
         console.log('the title is : ', argv);
     }
 })
- 
+// yargs.demandOption(['Addi', true])
+
+
 yargs.command({
     command: 'Add',
     describe: 'Adds a new note',
