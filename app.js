@@ -39,16 +39,8 @@ yargs.command({
 yargs.command({
     command: 'List',
     describe: 'Shows your notes',
-    buider: {
-
-        title: {
-            describe: 'Note listing...',
-            demandOption: true,
-            type: 'string'
-        }
-    },
-    handler: (argv) => {
-        console.log('Showing all your notes...' + argv.title);
+    handler: () => {
+        console.log('Showing all your notes...');
         
     }
 
