@@ -14,14 +14,21 @@ yargs.command({
             describe: 'Note title',
             demandOption: true,
             type: 'string'
-        }
+        },
+        body:{
+            alias: 'file',
+            demandOption: true,
+            default: 'name',
+            describe: 'these na option',
+            type: 'string'
+        },
     },
 
-    option:{
-        
-    },
+   
     handler: (argv) => {
         console.log('The title is', argv.title);
+        console.log(argv.body);
+        
         
     }
 })
