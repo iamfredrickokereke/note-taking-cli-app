@@ -23,9 +23,17 @@ yargs.command({
 
 yargs.command({
     command: 'List',
-    description: 'Shows all notes',
-    handler: () => {
-        console.log('Showing all notes...');
+    description: 'Shows your notes',
+    buider: {
+        
+        title: {
+            describe: 'Note listing...',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: (argv) => {
+        console.log('Showing all your notes...' + argv.title);
         
     }
 })
@@ -39,9 +47,16 @@ yargs.command({
     }
 })
 
-yargs.version('1.0.0')
 
-console.log(yargs.argv);
+yargs.parse();
+
+
+
+
+// yargs.version('1.0.0')
+
+
+// console.log(yargs.argv);
 
 // check data argument passed
 
