@@ -3,4 +3,4 @@ const book ={
     author: 'Ryan holiday'
 }
 
-const bookJson = JSON.stringify
+const bookJson = JSON.stringify(book);
