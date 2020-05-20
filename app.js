@@ -5,7 +5,6 @@ const yargs = require('yargs');
 
 // yargs.demandOption([true])
 
-
 yargs.command({
     command: 'Add',
     describe: 'Adds a new note',
@@ -19,7 +18,7 @@ yargs.command({
         body:{
             alias: 'body',
             demandOption: true,
-            // default: 'name',
+            default: 'name',
             describe: 'Note body',
             type: 'string'
         },
