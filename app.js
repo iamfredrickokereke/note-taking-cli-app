@@ -25,7 +25,7 @@ yargs.command({
     command: 'List',
     description: 'Shows your notes',
     buider: {
-        
+
         title: {
             describe: 'Note listing...',
             demandOption: true,
@@ -36,6 +36,7 @@ yargs.command({
         console.log('Showing all your notes...' + argv.title);
         
     }
+    
 })
 
 yargs.command({
