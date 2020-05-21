@@ -5,6 +5,7 @@ const yargs = require('yargs');
 
 // yargs.demandOption([true])
 
+
 yargs.command({
     command: 'Add',
     describe: 'Adds a new note',
