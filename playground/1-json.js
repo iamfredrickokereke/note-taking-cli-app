@@ -12,7 +12,11 @@ let bookJSON = JSON.stringify(book);
 
 //Read Json file
 
-// console.log(book);
+let file = fs.readFileSync('1-json.json', null, Buffer)
+
+file = file.toString();
+
+console.log(file);
 
 
 // console.log(bookJson);
