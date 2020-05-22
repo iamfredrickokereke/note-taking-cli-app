@@ -7,4 +7,7 @@ console.log(book);
 
 let bookJson = JSON.stringify(book);
 
+console.log(bookJson);
+
+
 let bookParsed = JSON.parse(bookJson);
