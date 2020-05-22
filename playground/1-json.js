@@ -7,9 +7,10 @@ const book ={
 
 let bookJSON = JSON.stringify(book);
 
+//Create and store json file
+// fs.writeFileSync('1-json.json', bookJSON);
 
-fs.writeFileSync('1-json.json', bookJSON);
-
+//Read Json file
 
 // console.log(book);
 
