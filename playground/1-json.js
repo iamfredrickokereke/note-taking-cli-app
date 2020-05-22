@@ -5,13 +5,14 @@ const book ={
     author: 'Ryan holiday'
 }
 
+let bookJSON = JSON.stringify(book);
 
-fs.writeFileSync('1-json.json', JSON)
+
+fs.writeFileSync('1-json.json', bookJSON);
 
 
 // console.log(book);
 
-// let bookJson = JSON.stringify(book);
 
 // console.log(bookJson);
 
