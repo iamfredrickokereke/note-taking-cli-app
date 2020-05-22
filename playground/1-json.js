@@ -9,5 +9,6 @@ let bookJson = JSON.stringify(book);
 
 console.log(bookJson);
 
-
 let bookParsed = JSON.parse(bookJson);
+
+console.log(bookParsed);
